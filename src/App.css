@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Manrope';
 }
 
 .App-logo {
@@ -35,4 +36,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.room-section {
+  min-height: 400px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #5a5a5a;
+  border: 10px solid #282c34;
+  border-radius: 40px;
+}
+
+.room-section:hover {
+  opacity: 0.5;
+}
+
+.room-section.flip {
+  animation: room-logo-spin infinite 2s linear;
+}
+
+@keyframes room-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.done-button {
+  margin-top: 10% !important;
+  padding: 20px;
+  width: 25%;
+  margin: auto;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #282c34;
+  cursor: pointer;
 }
